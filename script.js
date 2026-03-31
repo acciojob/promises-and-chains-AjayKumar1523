@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const form = document.getElementById("form");
 const ageInput = document.getElementById("age");
 const nameInput = document.getElementById("name");
@@ -9,9 +8,9 @@ form.addEventListener("submit", function (e) {
   const age = Number(ageInput.value);
   const name = nameInput.value.trim();
 
-  // ✅ Validation
+  // ✅ Validation (FIXED: removed ".")
   if (!age || !name) {
-    alert("Please enter valid details.");
+    alert("Please enter valid details");
     return;
   }
 
